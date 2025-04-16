@@ -1,0 +1,376 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Open Sans", "Segoe UI";
+    line-height: 1.4;
+}
+
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* OTP Inputs */
+.otp-inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the OTP inputs */
+}
+
+.otp-input {
+  padding-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 36px;
+  color: rgba(6, 5, 5, 0.62);
+  border: none; /* Remove all borders */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2) !important;
+  background-color: transparent; /* Optional: Make background transparent */
+  outline: none; /* Remove the default focus outline */
+  transition: border-bottom 0.3s ease;
+}
+
+.otp-input:focus {
+  border-bottom-color: rgba(6, 5, 5, 0.62) !important;
+}
+
+/* OTP Expiry Timer */
+#Div_OtpExpire {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Resend OTP Button */
+.resend-otp-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* div_con: Message about OTP */
+.info-msg1 {
+  font-size: 16px;
+  color: #333;
+}
+
+
+  /* Captcha.css */
+  .captcha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .captcha-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .refresh-captcha-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+   
+    cursor: pointer;
+  }
+  
+  .captcha-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .captcha-textbox {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .verify-captcha-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .captcha-error {
+    color: red;
+    margin-top: 10px;
+  }
+
+  .custom-checkbox + label::before {
+    content: '\2713';
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 25px;
+    width: 25px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #999;
+    color: #fff;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:checked + label::before {
+  content: '\2714';
+  font-size: 30px;
+  background-color: #f7f7f7;
+  color: #4CAF50;
+  border: none;
+}
+
+.apk-ipa-QR {
+  text-align: left;
+  display: inline-block;
+  border: 1px solid lightgray;
+  background-color: white;
+  height: 67px;
+  width: 210px;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+}
+
+.apk-ipa-Img {
+  width: 140px;
+  height: 35px;
+  margin: auto;
+  padding-right: 5px;
+  display: inline;
+}
+#dwn_Mobile {
+  margin-top: 40px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+.version-text {
+  font-size: 9pt;
+  color: #686c6a;
+}
+.login-QR-Code {
+  font-size: small;
+}
+.notification-icon svg {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 32px;
+  /* margin-right: 10px; */
+  border-radius: 15%;
+  font-size: 18px;
+  color: white;
+}
+
+/* .notification-icon, .notification-body {
+  float: left;
+} */
+
+.notification-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 15%;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification-body .title {
+  display: block;
+  font-size: 13px;  
+  padding-left: 10px;
+  font-family: "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+.dropdown-menu>li>a {
+  display: block;  
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.bg-darkred {
+  background-color: #ed4e2a !important;
+}
+
+.bg-darkorange {
+  background-color: #f4b400 !important;
+}
+
+.bg-darkgreen {
+  background-color: #53a93f !important;
+}
+
+.bg-blue {
+  background-color: #004C9C;
+}
+
+.bg-green {
+  background-color: #00867D;
+}
+
+.clearfix {
+  display: flex;
+  align-items: center;
+}
+
+.css-qr46ko {
+  max-height: 300px;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  color: #858585;
+}
+
+.cus-outer-tile {
+  padding: 10px;
+  min-height: 100%;
+  /* padding-top: 20px; */
+  padding-bottom: 30px;
+}
+
+.tile-heading {
+  color: #FFF;
+  text-decoration: none;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tile-heading-cus {
+  color: #525657;
+  text-decoration: none;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 60%;
+  float: left;
+  /* padding-top: 5px; */
+}
+
+.tile-img {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 13px;
+  }
+
+.tile-img-cus {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  text-align: right;
+}
+
+.tile-descrip {
+  color: #FFF;
+  font-size: 13px;
+  text-decoration: none;
+  height: 55px !important;
+}
+
+.tile-descrip-cus {
+  color: #525657;
+  font-size: 13px;
+  text-decoration: none;
+  height: 55px !important;
+}
+.tile-green {
+  background: #5eba0d;
+  padding: 5px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 100px;
+}
+
+.tile-white {
+  background: #ffffff;
+  padding: 10px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 100px;
+  height: 20%;
+  box-shadow: 0.5px 0.5px 5px 2px #e7e7e7;
+  border-radius: 5px;
+}
+
+.tile-brown {
+  background: #dfc300;
+  padding: 5px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 90px;
+}
+
+.tile-orange {
+  background: #e65e21;
+  padding: 5px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 100px;
+}
+
+.tile-red {
+  background: #ca2548;
+  padding: 5px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 100px;
+}
+
+.tile-blue {
+  background: #01bee4;
+  padding: 5px;
+  display: block;
+  /* margin-bottom: 10px; */
+  min-height: 100px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .tile-green,
+  .tile-brown,
+  .tile-orange,
+  .tile-red,
+  .tile-blue,
+  .tile-bg {
+    height: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .tile-green,
+  .tile-brown,
+  .tile-orange,
+  .tile-red,
+  .tile-blue,
+  .tile-bg {
+    height: 155px;
+  }
+}
